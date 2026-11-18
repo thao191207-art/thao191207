@@ -1,0 +1,61 @@
+{
+  "kanban_columns": [
+    {
+      "id": "moi_tiep_nhan",
+      "title": "Mới tiếp nhận",
+      "color": "slate",
+      "allowed_next": ["doi_chieu_ai", "loi_bo_sung"]
+    },
+    {
+      "id": "doi_chieu_ai",
+      "title": "Đối chiếu AI",
+      "color": "blue",
+      "allowed_next": ["cho_xac_minh", "loi_bo_sung"]
+    },
+    {
+      "id": "cho_xac_minh",
+      "title": "Chờ xác minh 3 phòng",
+      "color": "amber",
+      "allowed_next": ["da_cham_diem", "loi_bo_sung"]
+    },
+    {
+      "id": "da_cham_diem",
+      "title": "Đã chấm điểm",
+      "color": "indigo",
+      "allowed_next": ["cho_phe_duyet", "loi_bo_sung"]
+    },
+    {
+      "id": "cho_phe_duyet",
+      "title": "Chờ phê duyệt",
+      "color": "purple",
+      "allowed_next": ["da_quyet_dinh", "loi_bo_sung"]
+    },
+    {
+      "id": "da_quyet_dinh",
+      "title": "Đã quyết định",
+      "color": "teal",
+      "allowed_next": ["hoan_tat", "loi_bo_sung"]
+    },
+    {
+      "id": "hoan_tat",
+      "title": "Đã bàn giao/Hoàn tất",
+      "color": "emerald",
+      "allowed_next": []
+    },
+    {
+      "id": "loi_bo_sung",
+      "title": "Lỗi / Cần bổ sung",
+      "color": "rose",
+      "allowed_next": ["moi_tiep_nhan", "doi_chieu_ai", "cho_xac_minh"]
+    }
+  ],
+  "thresholds": {
+    "protection_radius_km": 3.5,
+    "max_unsecured_credit_vnd": 500000000,
+    "standard_credit_days": 30,
+    "maximum_credit_days": 45,
+    "phantom_commitment_threshold_vnd": 1500000000,
+    "min_technicians_required": 2,
+    "max_sla_hours": 48
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "server": {
+    "host": "127.0.0.1",
+    "port": 5000,
+    "debug": false
+  },
+  "gemini": {
+    "model": "gemini-2.5-flash",
+    "temperature": 0.3,
+    "max_tokens": 4096,
+    "timeout_seconds": 30,
+    "max_retries": 3,
+    "retry_base_delay": 1.5
+  },
+  "branding": {
+    "system_name": "Hệ Thống Phân Tích & Điều Hành Doanh Nghiệp",
+    "fictional_enterprise_name": "B25DTQT088_THANH THẢO",
+    "primary_color": "#07bdd5",
+    "secondary_color": "#2DD4BF",
+    "accent_color": "#A855F7",
+    "excel_header_color": "0891B2",
+    "excel_header_font_color": "FFFFFF",
+    "excel_zebra_color": "F0FDFA"
+  },
+  "feedback_loop": {
+    "max_rounds": 5,
+    "allow_user_override": true
+  },
+  "distribution_policy": {
+    "regions": [
+      "KV1 - Miền Bắc",
+      "KV2 - Miền Trung",
+      "KV3 - Miền Nam"
+    ],
+    "protection_radius_km": 3.5,
+    "max_unsecured_credit_vnd": 500000000,
+    "standard_credit_days": 30,
+    "maximum_credit_days": 45,
+    "phantom_commitment_threshold_vnd": 1500000000,
+    "min_technicians_required": 2,
+    "min_workshop_area_sqm": 15,
+    "max_sla_hours": 48
+  }
+}

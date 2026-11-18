@@ -1,0 +1,15 @@
+__pycache__/
+*.py[cod]
+*$py.class
+.env
+.venv/
+env/
+screenshots/
+*.png
+.vercel/
+agent/data/uploads/*
+!agent/data/uploads/.gitkeep
+agent/data/exports/*
+!agent/data/exports/.gitkeep
+.vscode/
+.idea/
